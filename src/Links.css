@@ -1,0 +1,19 @@
+@media (prefers-reduced-motion: no-preference) {
+    .container {
+        opacity: 0;
+    }
+
+    .smoothAppear {
+        animation: smooth-appear .85s ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes smooth-appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,38 +1,70 @@
-.App {
+header {
+  padding-block-start: 10px;
+
+  background-image: url('./assets/imgs/ladybug.jpg');
+  background-size: cover;
+  background-position: center;
+
+  color: #91c8e4;
+  text-shadow: -1px 0 #134f76, 0 1px #134f76, 1px 0 #134f76, 0 -1px #134f76;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  header {
+    animation: smoothAppear .85s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  h1 {
+    animation: slideDownAppear .85s ease;
+    animation-fill-mode: forwards;
+  }
+
+  h2 {
+    opacity: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span {
+  font-size: 0.8rem;
+
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 1px 10%;
 }
 
-@keyframes App-logo-spin {
+h2 {
+  border-bottom: 1px #91c8e4 solid;
+}
+
+section {
+  padding: 1px;
+
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+@keyframes smoothAppear {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownAppear {
+  from {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -1,0 +1,334 @@
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/index.css ***!
+  \*******************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap);
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/index.css (1) ***!
+  \***********************************************************************************************************************************************************************/
+html {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #134f76;
+  background-color: #f6f4eb;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #91c8e4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media (min-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 36px;
+  }
+}
+
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/Story.css ***!
+  \*******************************************************************************************************************************************************************/
+.tx6pw66UhU2l4hGiqAwk {
+    color: #91c8e4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .lVAMMG9ELKoxM6mMqz3I {
+        animation: xvHzsKwvG2vlzHN4QIGf .85s ease;
+        animation-fill-mode: forwards;
+        animation-delay: .85s;
+    }
+
+    .tx6pw66UhU2l4hGiqAwk, .mRegG8xeLE5eeDIc8Pck {
+        opacity: 0;
+        animation: zQhsHFTTNSmDIkZT2bHY .85s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes zQhsHFTTNSmDIkZT2bHY {
+    from {
+        opacity: 0;
+        transform: translateX(1em);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes xvHzsKwvG2vlzHN4QIGf {
+    from {
+        transform: translateX(-1em);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/Gallery.css ***!
+  \*********************************************************************************************************************************************************************/
+.xpn9bhAHYnv_kFRKGaqV {
+    display: grid;
+
+    background: linear-gradient(90deg, #f6f4eb, transparent 2% 98%, #f6f4eb),
+      linear-gradient(#f6f4eb, transparent 2% 98%, #f6f4eb),
+      linear-gradient(#def4ff 0% 100%);
+}
+
+figure {
+    padding-block: 1em;
+    padding-inline: 40px;
+  
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .xpn9bhAHYnv_kFRKGaqV {
+        opacity: 0;
+    }
+
+    figure {
+        opacity: 0;
+    }
+
+    .qYDMIwcxqfutqwopgDUN {
+        animation: ewOvmNjCELvH6apikP7D .85s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .MBYdrqFcBT0P_ILWALdH {
+        animation: oST7kj8dxBtApFWjd6aA .85s ease;
+        animation-fill-mode: forwards;
+    }
+
+    .xuPdJziJWsejhi_pPuIR {
+        animation: H6imCf4I8GF6hqVUtvxC .85s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+.zF32xNFD7ab8ymrIVJFh {
+    grid-template-rows: 1fr 1fr;
+}
+
+.U8OWzOUcYAGMNC4c8b1e {
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    border-radius: 3em;
+
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    color: #91c8e4;
+}
+
+@keyframes ewOvmNjCELvH6apikP7D {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes oST7kj8dxBtApFWjd6aA {
+    from {
+        transform: translateY(1em);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes H6imCf4I8GF6hqVUtvxC {
+    from {
+        transform: translateX(-1em);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/Feature.css ***!
+  \*********************************************************************************************************************************************************************/
+@media (prefers-reduced-motion: no-preference) {
+    .j0L2YdYBmcRY06MlVMUz {
+        animation: XxM17YqEFt04cBIvyuHk .85s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes XxM17YqEFt04cBIvyuHk {
+    from {
+        transform: translateX(-1em);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/Links.css ***!
+  \*******************************************************************************************************************************************************************/
+.X7_gco45yt9NSIuyFSS_ {
+    padding: 1px 10px;
+    background-color: #def4ff;
+    border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .X7_gco45yt9NSIuyFSS_ {
+        opacity: 0;
+    }
+
+    .dvgUEEPvRnd4GWLGeJbP {
+        animation: xMhafWNI6xF_xkTO65Fb .85s ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes xMhafWNI6xF_xkTO65Fb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/App.css ***!
+  \*****************************************************************************************************************************************************************/
+header {
+  padding-block-start: 10px;
+
+  background-image: url(../14fdd75dbc39c0324645.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: #91c8e4;
+  text-shadow: -1px 0 #134f76, 0 1px #134f76, 1px 0 #134f76, 0 -1px #134f76;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  header {
+    animation: kTVZ2ApRkvgA3iVRYvKe .85s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  h1 {
+    animation: YwKdYRaylXR6FCcp0535 .85s ease;
+    animation-fill-mode: forwards;
+  }
+
+  h2 {
+    opacity: 0;
+  }
+}
+
+span {
+  font-size: 0.8rem;
+
+  margin-left: 10px;
+}
+
+main {
+  padding: 1px 10%;
+}
+
+h2 {
+  border-bottom: 1px #91c8e4 solid;
+}
+
+section {
+  padding: 1px;
+
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+@keyframes kTVZ2ApRkvgA3iVRYvKe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes YwKdYRaylXR6FCcp0535 {
+  from {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

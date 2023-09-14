@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -6,14 +7,14 @@ module.exports = {
     mode: process.env.NODE_ENV || 'development',
     output: {
         filename: 'js/main.js',
-        path: __dirname,
+        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Степанко Иван',
             favicon: 'src/assets/favicon.ico',
             template: 'src/assets/template.html',
-            publicPath: __dirname,
+            publicPath: path.resolve(__dirname, 'dist'),
         }),
         new MiniCssExtractPlugin({
             filename: 'css/main.css',
@@ -50,10 +51,5 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-    },
-    devServer: {
-        contentBase: __dirname,
-        port: 3000,
-        watchContentBase: true,
     },
 };

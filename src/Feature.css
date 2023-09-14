@@ -4,3 +4,13 @@
         animation-fill-mode: forwards;
     }
 }
+
+@keyframes slide-right-appear {
+    from {
+        transform: translateX(-1em);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

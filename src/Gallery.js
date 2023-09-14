@@ -7,13 +7,14 @@ import now_portrait from './assets/imgs/now_portrait.jpg';
 import now_landscape from './assets/imgs/now_landscape.jpg';
 
 function useWindowSize() {
-    const [aspectRatio, setState] = useState();
+    const [aspectRatio, setRatio] = useState();
     useLayoutEffect(() => {
-        function onResize() {
-            setState(window.innerWidth/window.innerHeight);
+        function updateRatio() {
+            setRatio(window.innerWidth/window.innerHeight);
         }
-        window.addEventListener('resize', onResize);
-        return window.removeEventListener('resize', onResize);
+        window.addEventListener('resize', updateRatio);
+        updateRatio();
+        return () => window.removeEventListener('resize', updateRatio);
     }, []);
     return aspectRatio;
 }
@@ -46,7 +47,7 @@ function Gallery() {
         return(
             <section id='Gallery'>
                 <h2>Улыбчивый я 😼</h2>
-                <div className={styles.container + styles.vertical}>
+                <div className={styles.container + ' ' + styles.vertical}>
                     <figure>
                         <figcaption>Привет из прошлого</figcaption>
                         <img src={hs_landscape}></img>
@@ -61,9 +62,9 @@ function Gallery() {
     }
 
     return(
-        <section>
+        <section id='Gallery'>
             <h2>Улыбчивый я 😼</h2>
-            <div className={styles.container + styles.horizontal}>
+            <div className={styles.container + ' ' + styles.horizontal}>
                 <figure>
                     <img src={hs_portrait}></img>
                     <figcaption>Привет из прошлого</figcaption>

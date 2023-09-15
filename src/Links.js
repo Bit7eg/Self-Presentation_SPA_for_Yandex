@@ -39,7 +39,7 @@ function Link() {
     return(
         <section id='Link' className={styles.container}>
             <p>
-                Ответы ко второму заданию: <a href='' target='_blank' rel='noopener'>Notion</a>
+                Ответы ко второму заданию: <a href='https://cautious-mochi-534.notion.site/2-ed155ea124544357b1295e511c58492f?pvs=4' target='_blank' rel='noopener'>Notion</a>
             </p>
             <p>
                 Исходники можно найти здесь: <a href='https://github.com/Bit7eg/Self-Presentation_SPA_for_Yandex' target='_blank' rel='noopener'>GitHub</a>

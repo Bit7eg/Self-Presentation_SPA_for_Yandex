@@ -1,10 +1,10 @@
 import React, {useState, useLayoutEffect} from 'react';
 import styles from './Gallery.css';
 
-import hs_portrait from './assets/imgs/highschool_portrait.jpg';
-import hs_landscape from './assets/imgs/highschool_landscape.jpg';
-import now_portrait from './assets/imgs/now_portrait.jpg';
-import now_landscape from './assets/imgs/now_landscape.jpg';
+import hs_portrait from './imgs/highschool_portrait.jpg';
+import hs_landscape from './imgs/highschool_landscape.jpg';
+import now_portrait from './imgs/now_portrait.jpg';
+import now_landscape from './imgs/now_landscape.jpg';
 
 function useWindowSize() {
     const [aspectRatio, setRatio] = useState();

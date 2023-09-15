@@ -2,28 +2,39 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const isProd = (process.env.NODE_ENV === 'production');
+const cssName = (isProd ? 'build/styles-[hash].css' : 'build/styles.css');
+const jsName = (isProd ? 'build/[name]-[hash].js' : 'build/[name].js');
+
 module.exports = {
     entry: './src/index.js',
     mode: process.env.NODE_ENV || 'development',
     output: {
-        filename: 'js/main.js',
+        filename: jsName,
         path: path.resolve(__dirname, 'dist'),
+        clean: isProd,
+    },
+    resolve: {
+        roots: [ path.resolve(__dirname, 'dist') ],
+        modules: ['node_modules'],
+        extensions: ['', '.js', '.jsx'],
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             title: 'Степанко Иван',
-            favicon: 'src/assets/favicon.ico',
-            template: 'src/assets/template.html',
-            publicPath: path.resolve(__dirname, 'dist'),
+            favicon: path.resolve(__dirname, 'public/favicon.ico'),
+            template: path.resolve(__dirname, 'public/index.html'),
+            minify: false,
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/main.css',
-        })
+            filename: cssName,
+        }),
     ],
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 exclude: /(node_modules|dist)/,
                 use: ['babel-loader'],
             },
@@ -51,5 +62,9 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
+    },
+    devtool: 'source-map',
+    devServer: {
+        port: 3000,
     },
 };

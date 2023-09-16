@@ -16,8 +16,10 @@ function Feature() {
 
     return(
         <section id='Feature'>
-            <h2>Больше красивостей любителю красивостей! </h2>
-            <video></video>
+            <h2>Больше красивостей любителю красивостей! 🎞️</h2>
+            <video controls>
+                <source src='./video/css_animations.mp4' type='video/mp4'/>
+            </video>
         </section>
     );
 }

@@ -1,3 +1,7 @@
+video {
+    width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .slideRightAppear {
         animation: slide-right-appear .85s ease;

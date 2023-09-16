@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Feature.css';
+import video from './video/css_animations.mp4';
 
 function animateFeature() {
     const feature = document.getElementById('Feature');
@@ -18,7 +19,7 @@ function Feature() {
         <section id='Feature'>
             <h2>Больше красивостей любителю красивостей! 🎞️</h2>
             <video controls>
-                <source src='./video/css_animations.mp4' type='video/mp4'/>
+                <source src={video} type='video/mp4'/>
             </video>
         </section>
     );
